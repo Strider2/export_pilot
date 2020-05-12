@@ -334,7 +334,9 @@ class Import extends CodonModule {
 
         foreach ($all_pilots as $p) {
             $line = "{$p->code},{$p->pilotid},{$p->firstname},{$p->lastname}," . "{$p->email},{$p->location},{$p->hub},{$p->rank}," .
-                "{$p->confirmed}, {$p->group}, {$p->retired}, {$p->value}";
+                "{$p->confirmed}, {$p->group}, {$p->retired}, {$p->password}," . "{$p->salt},{$p->bgimage}, {$p->lastlogin},{$p->totalflights}," .
+								"{$p->totalhours},{$p->totalpay},{$p->payadjust},{$p->transferhours}," . "{$p->rankid},{$p->rank},{$p->ranklevel},{$p->joindate}," .
+								"{$p->lastpirep},{$p->lastip},{$p->groupid},{$p->group}";
 
             fputcsv($fp, explode(',', $line));
         }

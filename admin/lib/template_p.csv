@@ -1,1 +1,1 @@
-code,pilotid,firstname,lastname,email,location,hub,rank,confirmed,group,retired,value
+code,pilotid,firstname,lastname,email,location,hub,rank,confirmed,group,retired,password,salt,bgimage,lastlogin,totalflights,totalhours,totalpay,payadjust,transferhours,rankid,rank,ranklevel,joindate,lastpirep,lastip,groupid,group
